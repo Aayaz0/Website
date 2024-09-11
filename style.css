@@ -1,0 +1,281 @@
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    background-color: #f4f6f7;
+    padding: 10px 0;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #585859;
+}
+
+.title {
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5); /* Optional: adds a background to the text */
+    display: inline-block;
+    border-radius: 10px; /* Optional: rounds the corners of the background */
+}
+
+.subheading {
+    font-size: 24px;
+    color: #fff;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5); /* Optional: adds a background to the text */
+    display: inline-block;
+    border-radius: 10px; /* Optional: rounds the corners of the background */
+}
+
+
+
+.navbar .active {
+    font-weight: bold;
+    color: #ff6347; 
+    border-bottom: 2px solid #ff6347; 
+}
+
+.navbar a {
+    font-weight: 600;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+.navbar a:hover {
+    color: #ff6347;
+}
+
+home{
+    font-size: 3cm;
+}
+
+#rooms {
+    padding: 50px 0;
+}
+
+.rooms-Type {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.img-rounded{
+    position: relative;
+}
+.title{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top:400px;
+    left:400px;
+    font-weight: 700;
+    font-size: 75px;
+    color: white;
+ 
+}
+.room {
+    flex: 1 1 300px;
+    max-width: 300px;
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.room img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.room h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.room p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+
+#dining {
+    padding: 50px 0;
+    background-color: #f8f9fa;
+}
+
+.dining-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.dining-option {
+    flex: 1 1 45%;
+    max-width: 45%;
+    text-align: center;
+}
+
+.dining-option img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.dining-option h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Amenities Section */
+#amenities {
+    padding: 50px 0;
+}
+
+.amenities-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.amenity {
+    flex: 1 1 30%;
+    max-width: 30%;
+    text-align: center;
+}
+
+.amenity img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.amenity h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+/* Photo Gallery Section */
+#photo-gallery {
+    padding: 50px 0;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+#photo-gallery h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #343a40;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.gallery-item img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 600px) {
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}
+
+
+/* Book Now Section */
+#book-now {
+    padding: 50px 0;
+    background-color: #f8f9fa;
+}
+
+#book-now .container {
+    max-width: 600px;
+}
+
+#book-now h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+/* Contact Section */
+#contact {
+    padding: 50px 0;
+}
+
+#contact .contact-info {
+    text-align: center;
+}
+
+#contact .contact-info p {
+    font-size: 1.1rem;
+}
+
+.footer {
+    background-color: white; 
+    padding: 20px 0; 
+}
+
+.social-links {
+    list-style: none; 
+    padding: 0; 
+    margin: 0;
+    display: flex;
+    justify-content: center; 
+}
+
+.social-links li {
+    margin: 0 10px;
+}
+
+.social-links img {
+    display: block; 
+}
